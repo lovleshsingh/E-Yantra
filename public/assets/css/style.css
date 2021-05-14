@@ -1,16 +1,8 @@
-/**
-* Template Name: Kelly - v2.1.1
-* Template URL: https://bootstrapmade.com/kelly-free-bootstrap-cv-resume-html-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
 
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  scroll-behavior: smooth;
 }
 
 a {
@@ -26,14 +18,14 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-#main {
+/* #main {
   margin-top: 50px;
-}
+} */
 
 @media (max-width: 992px) {
-  #main {
+  /* #main {
     margin-top: 30px;
-  }
+  } */
 }
 
 /*--------------------------------------------------------------
@@ -132,7 +124,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #header .logo a {
-  color: #222222;
+  color: white;
 }
 
 #header .logo img {
@@ -390,7 +382,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .header-social-links a {
-  color: #222222;
+  color: white;
   padding-left: 6px;
   display: inline-block;
   line-height: 1px;
@@ -824,6 +816,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services {
+  background: #111;
+}
+
 .services .icon-box {
   text-align: center;
   padding: 70px 20px 80px 20px;
@@ -913,20 +909,20 @@ section {
   fill: #e80368;
 }
 
-.services .iconbox-yellow i {
-  color: #ffbb2c;
+.services .iconbox-green i {
+  color: #009900;
 }
 
-.services .iconbox-yellow:hover .icon i {
+.services .iconbox-green:hover .icon i {
   color: #fff;
 }
 
-.services .iconbox-yellow:hover .icon path {
-  fill: #ffbb2c;
+.services .iconbox-green:hover .icon path {
+  fill: #009900;
 }
 
 .services .iconbox-red i {
-  color: #ff5828;
+  color: #ff2828;
 }
 
 .services .iconbox-red:hover .icon i {
@@ -948,6 +944,18 @@ section {
 .services .iconbox-teal:hover .icon path {
   fill: #11dbcf;
 }
+
+.services .container .section-title h2{
+  color: white;
+}
+
+.services .container .section-title {
+  color: white;
+}
+
+
+
+
 
 /*--------------------------------------------------------------
 # Portfolio
@@ -1287,11 +1295,12 @@ section {
 # Footer
 --------------------------------------------------------------*/
 #footer {
-  background: #e9e8e6;
+  background: #111;
   padding: 30px 0;
-  color: #222222;
+  color: white;
   font-size: 14px;
   text-align: center;
+  border-top: 0.5px solid white;
 }
 
 #footer .credits {
