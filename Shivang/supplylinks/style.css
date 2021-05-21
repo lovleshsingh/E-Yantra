@@ -28,11 +28,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .corners {
-  border-radius: 50px / 15px;
-  background: #73AD21;
-  padding: 40px;
-  width: 400px;
-  height: 150px;
+  border-radius: 20px;
+  background: #cfeb2d;
 }
 
 #main {
