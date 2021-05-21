@@ -28,8 +28,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .corners {
-  color:rgba(127, 137, 161, 0.25);
-  border-radius: 10px;
+  border-radius: 50px / 15px;
+  background: #73AD21;
+  padding: 40px;
+  width: 400px;
+  height: 150px;
 }
 
 #main {
