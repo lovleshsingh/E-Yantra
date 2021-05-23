@@ -38,6 +38,27 @@
         }
     </style>
 
+    <script>
+        let form = document.getElementById("request-form");
+        
+        form.addEventListener('submit', event() =>{
+            let name = form.elements['name'].value;
+            let email = form.elements['email'].value;
+            let phone = form.elements['phone'].value;
+            let address = form.elements['address'].value;:{ name : "+ name +",phone :" + phone +",address :" + address + "}}}"
+
+            function writeUserData(email, name, phone, address) {
+              firebase.database().ref('users/' + email).set({
+                name: name,
+                phone: phone,
+                address : address
+              });
+            }
+
+            event.preventDefault();
+        });
+    </script>
+
 </head>
 
 <body>
@@ -77,7 +98,7 @@
         <h2>Inform us about empty oxygen cylinders in your area and our volunteers will make sure that it is flled and used to help someone in need</h2>
       </div>
       <div class="col-lg-4 ">
-        <form id="request-from">
+        <form id="request-form">
             <h2>Request Form</h2><br>
             <table>
             <tr><td><h2><label for>Name</label></h2></td> <td><input name = "name" type="text"></input></td></tr>
