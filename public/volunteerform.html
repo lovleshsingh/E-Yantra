@@ -9,7 +9,7 @@
   <meta http-equiv="Pragma" content="no-cache"/>
   <meta http-equiv="Expires" content="0"/>
 
-  <title>Resources</title>
+  <title>Volunteer Registration</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -39,6 +39,7 @@
     </style>
 
 </head>
+
 <body>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
@@ -72,17 +73,19 @@
     background-size: cover;
     background-color: #111;">
       <div class="container col-12 col-lg-4 d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
-        <h1>Oxygen Cylinder Pickup Service</h1>
-        <h2>Inform us about empty oxygen cylinders in your area and our volunteers will make sure that it is flled and used to help someone in need</h2>
+        <h1>Volunteer Registration</h1>
+        <h2>Interested in working with us? Fill up this form and we'll reach out as soon as possible!</h2>
       </div>
       <div class="col-lg-4 ">
-        <form id="edit" action="jss/add.php" method="POST">
-            <h2>Request Form</h2><br>
+        <form id="volunteer" action="jss/add.php" method="POST">
+            <h2>Volunteer Form</h2><br>
             <table>
             <tr><td><h2><label for>Name</label></h2></td> <td><input name = "name" type="text"></input></td></tr>
             <tr><td><h2><label for>Phone no.</label></h2></td> <td><input name = "phone" type="text"></input></td></tr>
             <tr><td><h2><label for>Email</label><h2></td> <td><input name = "email" type="text"></input></td></tr>
-            <tr><td><h2><label for>Address</label></h2></td> <td><input name = "address" type="text"></input></td></tr>
+            <tr><td><h2><label for>Area Pincode</label></h2></td> <td><input name = "Pincode" type="number"></input></td></tr>
+            <tr><td><h2><label for>City</label></h2></td> <td><input name = "city" type="text"></input></td></tr>
+            <tr><td><h2><label for>Preferance</label></h2></td><td><select><option>Food Delivery</option><option>Oxygen Delivery</option></select></td></tr>
             </table>
             <input type="submit" value="Submit Request" class="btn-about scrollto" style="width:100%"></input>
         </form>
