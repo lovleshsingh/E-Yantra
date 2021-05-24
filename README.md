@@ -1,3 +1,4 @@
+
 # E-Yantra
 Title - Pocohe - Post Covid Help
 
@@ -17,3 +18,7 @@ Platform - Visual Studio Code, Vim, GitHub
 Additional Details:
 Facts and Figure are updated in every 2 hours in refernce to - https://www.mygov.in/corona-data/covid19-statewise-status/
 ratio section is updated everyday with refernce to - https://www.mygov.in/covid-19
+
+Dataflow Diagram
+
+![dataflow-diagram](https://user-images.githubusercontent.com/57663956/119390342-87b3aa80-bcea-11eb-80ef-d61ba2fc5436.png)
