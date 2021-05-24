@@ -9,7 +9,7 @@
   <meta http-equiv="Pragma" content="no-cache"/>
   <meta http-equiv="Expires" content="0"/>
 
-  <title>Resources</title>
+  <title>Volunteer Registration</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -39,6 +39,7 @@
     </style>
 
 </head>
+
 <body>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
@@ -72,16 +73,22 @@
     background-size: cover;
     background-color: #111;">
       <div class="container col-12 col-lg-4 d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
-        <h1>Resources</h1>
-        <h2>Following are some links which may help you reach the aids provided by the government and some verified NGOs.</h2>
+        <h1>Volunteer Registration</h1>
+        <h2>Interested in working with us? Fill up this form and we'll reach out as soon as possible!</h2>
       </div>
       <div class="col-lg-4 ">
-        <h4><a href="https://www.cowin.gov.in/home" target="_blank">Vaccinations</a></h4><br>
-        <h4><a href="https://www.covidresourcesindia.com/" target="_blank">COVID-19 Resources Website</a></h4><br>
-        <h4><a href="https://www.icmr.gov.in/pdf/covid/techdoc/COVID19_Management_Algorithm_22042021_v1.pdf" target="_blank">ICMR Guidelines on COVID-19 Management</a></h4><br>
-        <h4><a href="https://www.icmr.gov.in/pdf/covid/techdoc/Mucormycosis_ADVISORY_FROM_ICMR_In_COVID19_time.pdf" target="_blank">ICMR Guidelines on Mucormycosis Treatment</a></h4><br>
-        <h4><a href="https://hemkuntfoundation.com/oxygen-relief/" target="_blank">Oxygen relief from Hemkunt Foundation</a></h4><br>
-        <h4><a href="https://www.missionoxygen.org/contact" target="_blank">Mission Oxygen Contact Portal</a></h4><br>
+        <form id="volunteer" action="jss/add.php" method="POST">
+            <h2>Volunteer Form</h2><br>
+            <table>
+            <tr><td><h2><label for>Name</label></h2></td> <td><input name = "name" type="text"></input></td></tr>
+            <tr><td><h2><label for>Phone no.</label></h2></td> <td><input name = "phone" type="text"></input></td></tr>
+            <tr><td><h2><label for>Email</label><h2></td> <td><input name = "email" type="text"></input></td></tr>
+            <tr><td><h2><label for>Area Pincode</label></h2></td> <td><input name = "Pincode" type="number"></input></td></tr>
+            <tr><td><h2><label for>City</label></h2></td> <td><input name = "city" type="text"></input></td></tr>
+            <tr><td><h2><label for>Preferance</label></h2></td><td><select><option>Food Delivery</option><option>Oxygen Delivery</option></select></td></tr>
+            </table>
+            <input type="submit" value="Submit Request" class="btn-about scrollto" style="width:100%"></input>
+        </form>
       </div>
       <footer class="col-lg-4" id="hero-footer">
           <div class="row text-center">
