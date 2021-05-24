@@ -9,7 +9,7 @@
   <meta http-equiv="Pragma" content="no-cache"/>
   <meta http-equiv="Expires" content="0"/>
 
-  <title>Pocohe-Home</title>
+  <title>Volunteer Registration</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -31,25 +31,27 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+    <style>
+        input{
+            border-radius: 20px;
+            width: 180%;
+        }
+    </style>
+
 </head>
 
 <body>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
       <div class="container-fluid d-flex justify-content-between align-items-center">
-        
+
         <a href="index.html" class="logo"><img src="assets/img/photo_2021-05-16_21-51-33.jpg" alt="" class="img-fluid"></a>
         <!-- <h1 class="logo"><a href="index.html">Pocohe</a></h1> -->
-        
+
 
         <nav class="nav-menu d-none d-lg-block">
           <ul>
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="resume.html">Resume</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="portfolio.html">Portfolio</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li style = "margin-left: 625px"><a href="index.html">Back</a></li>
           </ul>
         </nav>
         <!-- .nav-menu -->
@@ -67,106 +69,142 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center hero-container">
+    <section id="hero" class="d-flex align-items-center hero-container" style="    background: url(assets/img/cylinder-bg.png) top center;
+    background-size: cover;
+    background-color: #111;">
       <div class="container col-12 col-lg-4 d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
-        <h1>Post Covid Help</h1>
-        <h2>Fight together, win together</h2>
-        <a href="#services" class="btn-about scrollto">Need Help</a>
+        <h1>Volunteer Registration</h1>
+        <h2>Interested in working with us? Fill up this form and we'll reach out as soon as possible!</h2>
       </div>
-      <div class="col-lg-4 "></div>
+      <div class="col-lg-4 ">
+        <form id="volunteer" action="jss/add.php" method="POST">
+            <h2>Volunteer Form</h2><br>
+            <table>
+            <tr><td><h2><label for>Name</label></h2></td> <td><input name = "name" type="text"></input></td></tr>
+            <tr><td><h2><label for>Phone no.</label></h2></td> <td><input name = "phone" type="text"></input></td></tr>
+            <tr><td><h2><label for>Email</label><h2></td> <td><input name = "email" type="text"></input></td></tr>
+            <tr><td><h2><label for>Area Pincode</label></h2></td> <td><input name = "Pincode" type="number"></input></td></tr>
+            <tr><td><h2><label for>City</label></h2></td> <td><input name = "city" type="text"></input></td></tr>
+            <tr><td><h2><label for>Preferance</label></h2></td><td><select><option>Food Delivery</option><option>Oxygen Delivery</option></select></td></tr>
+            </table>
+            <input type="submit" value="Submit Request" class="btn-about scrollto" style="width:100%"></input>
+        </form>
+      </div>
       <footer class="col-lg-4" id="hero-footer">
-        <div class="row text-center">
-          <div class="active mb-lg-1 col-lg-12 col-2 icon d-lg-flex">
-            <div class="d-lg-flex d-lg-row">
-              <a href="#"><i class="bx bx-home-smile"></i></a>
-              <div class="para active flex-column">
-                <h5 class="m-auto">Home</h5>
-                <h6 class="m-auto"></h6>
-                <p class="d-lg-none">Home</p>
+          <div class="row text-center">
+            <div class="active mb-lg-1 col-lg-12 col-2 icon d-lg-flex">
+              <div class="d-lg-flex d-lg-row">
+                <a href="#"><i class="bx bx-home-smile"></i></a>
+                <div class="para active flex-column">
+                  <h5 class="m-auto">Home</h5>
+                  <h6 class="m-auto"></h6>
+                  <p class="d-lg-none">Home</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 mb-lg-1 col-lg-12 icon d-lg-flex">
+              <div class="d-lg-flex d-lg-row">
+                <a href="#"><i class="icofont-injection-syringe"></i></a>
+                <div class="para flex-column">
+                  <h5 class="m-auto">Vaccine</h5>
+                  <h6 class="m-auto"></h6>
+                  <p class="d-lg-none">Vaccine</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 mb-lg-1 col-lg-12 col-lg-12 icon d-lg-flex">
+              <div class="d-lg-flex d-lg-row">
+                <a href="#"><i class="bx bxs-megaphone"></i></a>
+                <div class="para flex-column">
+                  <h5 class="m-auto">Awareness</h5>
+                  <h6  class="m-auto">Major prevention and methods by <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank">WHO</a> and other  government officials on Covid-19</h6>
+                  <p class="d-lg-none">Awareness</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 mb-lg-1 col-lg-12 col-lg-12 icon d-lg-flex">
+              <div class="d-lg-flex d-lg-row">
+                <a href="#"><i class="bx bx-first-aid"></i></a>
+                <div class="para flex-column">
+                  <h5 class="m-auto">Supplies</h5>
+                  <h6 class="m-auto">Link of raw Materials for Covid-19 Supplies by contributor</h6>
+                  <p class="d-lg-none">Supplies</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 mb-lg-1 col-lg-12 icon d-lg-flex">
+              <div class="d-lg-flex d-lg-row">
+                <a href="#"><i class="bx bx-map"></i></a>
+                <div class="para flex-column">
+                  <h5 class="m-auto">Updates</h5>
+                  <h6 class="m-auto">New updates related to COVID-19 layer in Maps along with latest update on corona virus outbreak</h6>
+                  <p class="d-lg-none">Updates</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-2 mb-lg-1 col-lg-12 d-lg-flex icon">
+              <div class="d-lg-flex d-lg-row">
+                <a role="button" data-toggle="modal" data-html="true" data-target="#more">
+                  <i class="bx bx-category-alt"></i>
+                </a>
+                <div class="para flex-column">
+                  <h5 class="m-auto">More</h5>
+                  <h6 class="m-auto"></h6>
+                  <p class="d-lg-none">More</p>
+                </div>
               </div>
             </div>
           </div>
-          <div class="col-2 mb-lg-1 col-lg-12 icon d-lg-flex">
-            <div class="d-lg-flex d-lg-row">
-              <a href="#"><i class="icofont-injection-syringe"></i></a>
-              <div class="para flex-column">
-                <h5 class="m-auto">Vaccine</h5>
-                <h6 class="m-auto"></h6>
-                <p class="d-lg-none">Vaccine</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-2 mb-lg-1 col-lg-12 col-lg-12 icon d-lg-flex">
-            <div class="d-lg-flex d-lg-row">
-              <a href="cylinder-request.html"><i class="icofont-fire-extinguisher"></i></a>
-              <div class="para flex-column">
-                <h5 class="m-auto">Cylinder</h5>
-                <h6  class="m-auto"></h6>
-                <p class="d-lg-none">Cylinder </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-2 mb-lg-1 col-lg-12 col-lg-12 icon d-lg-flex">
-            <div class="d-lg-flex d-lg-row">
-              <a href="about-copy.html"><i class="bx bxs-megaphone"></i></a>
-              <div class="para flex-column">
-                <h5 class="m-auto">Awareness</h5>
-                <h6  class="m-auto">Major prevention and methods by <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank">WHO</a> and other  government officials on Covid-19</h6>
-                <p class="d-lg-none">Awareness</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-2 mb-lg-1 col-lg-12 col-lg-12 icon d-lg-flex">
-            <div class="d-lg-flex d-lg-row">
-              <a href="#"><i class="bx bx-first-aid"></i></a>
-              <div class="para flex-column">
-                <h5 class="m-auto">Supplies</h5>
-                <h6 class="m-auto">Link of raw Materials for Covid-19 Supplies by contributor</h6>
-                <p class="d-lg-none">Supplies</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-2 mb-lg-1 col-lg-12 d-lg-flex icon">
-            <div class="d-lg-flex d-lg-row">
-              <a role="button" data-toggle="modal" data-html="true" data-target="#more">
-                <i class="bx bx-category-alt"></i>
-              </a>
-              <div class="para flex-column">
-                <h5 class="m-auto">More</h5>
-                <h6 class="m-auto"></h6>
-                <p class="d-lg-none">More</p>
-              </div>
-            </div>
-          </div>
-        </div>
       </footer>
-
-      <!-- Modal -->
-      <div class="modal" id="more" role="dialog">
+      <div style="z-index: 9999;" class="modal" id="more" role="dialog">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div>
-              <button style="color: #34b7a7;" type="button" class="mr-2 mt-2 close" data-dismiss="modal">
+              <button type="button" class="mr-2 mt-2 close" data-dismiss="modal">
                 <i class="bx bx-x"></i></a>
               </button>
             </div>
             <div class="modal-body">
-              <div class="row text-center">
-                <div class="col-12 mb-lg-1 icon d-flex">
-                  <div class="d-flex d-row">
-                    <a href="#"><i class="bx bx-map-alt"></i></a>
-                    <div class="para flex-column">
-                      <h5 class="m-auto">Updates</h5>
-                      <h6 class="m-auto">New updates related to COVID-19 layer in Maps along with latest update on corona virus outbreak</h6>
+              <div class="col-12">
+                <div class="row text-center">
+                  <div class="active mb-lg-1 col-lg-12 col-2 icon d-lg-flex">
+                    <div class="d-lg-flex d-lg-row">
+                      <a href="#"><i class="bx bx-home-smile"></i></a>
+                      <div class="para active flex-column">
+                        <h5 class="m-auto">Home</h5>
+                        <h6 class="m-auto"></h6>
+                        <p class="d-lg-none">Home</p>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div class="col-12 mb-lg-1 icon d-flex">
-                  <div class="d-flex d-row">
-                    <a href="#"><i class="icofont-hand-power"></i></a>
-                    <div class="para flex-column">
-                      <h5 class="m-auto">Volunteer</h5>
-                      <h6 class="m-auto">Be Volunteer</h6>
+                  <div class="col-2 mb-lg-1 col-lg-12 icon d-lg-flex">
+                    <div class="d-lg-flex d-lg-row">
+                      <a href="#"><i class="icofont-injection-syringe"></i></a>
+                      <div class="para flex-column">
+                        <h5 class="m-auto">Vaccine</h5>
+                        <h6 class="m-auto"></h6>
+                        <p class="d-lg-none">Vaccine</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="active mb-lg-1 col-lg-12 col-2 icon d-lg-flex">
+                    <div class="d-lg-flex d-lg-row">
+                      <a href="#"><i class="bx bx-home-smile"></i></a>
+                      <div class="para active flex-column">
+                        <h5 class="m-auto">Home</h5>
+                        <h6 class="m-auto"></h6>
+                        <p class="d-lg-none">Home</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-2 mb-lg-1 col-lg-12 icon d-lg-flex">
+                    <div class="d-lg-flex d-lg-row">
+                      <a href="#"><i class="icofont-injection-syringe"></i></a>
+                      <div class="para flex-column">
+                        <h5 class="m-auto">Vaccine</h5>
+                        <h6 class="m-auto"></h6>
+                        <p class="d-lg-none">Vaccine</p>
+                      </div>
                     </div>
                   </div>
                 </div>
@@ -177,20 +215,17 @@
       </div>
     </section>
 
-    
+
     <!-- End Hero -->
-    
+
     <!-- <main id="main">
-      
       ======= Services Section =======
       <section id="services" class="services">
         <div class="container" data-aos="fade-up">
-  
           <div class="section-title">
             <h2>Services</h2>
             <p>We are in this together-Fight together, win together</p>
           </div>
-  
           <div class="row">
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box iconbox-blue">
@@ -204,7 +239,6 @@
                 <p>Get information and guidance from expertise all over the world regarding any issue in current outbreak of Covid-19</p>
               </div>
             </div>
-  
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box iconbox-red ">
                 <div class="icon">
@@ -217,7 +251,6 @@
                 <p>Major prevention and methods recommended by the <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019" target="_blank">WHO</a> and other  government officials on Covid-19</p>
               </div>
             </div>
-  
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0" data-aos="zoom-in" data-aos-delay="300">
               <div class="icon-box iconbox-pink">
                 <div class="icon">
@@ -230,7 +263,6 @@
                 <p>Support Kids, Seniors, and Vulnerable Communities during the COVID-19 Pandemic. Feeding the Hungry. Supporting Families and Children</p>
               </div>
             </div>
-  
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="100">
               <div class="icon-box iconbox-green">
                 <div class="icon">
@@ -243,7 +275,6 @@
                 <p>Link of raw Materials for Covid-19 Supplies by contributor</p>
               </div>
             </div>
-  
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="200">
               <div class="icon-box iconbox-orange">
                 <div class="icon">
@@ -256,7 +287,6 @@
                 <p>Order and Schedule online Medicines. Upload prescription and buy (purchase) online medicine with home (doorstep) delivery</p>
               </div>
             </div>
-  
             <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4" data-aos="zoom-in" data-aos-delay="300">
               <div class="icon-box iconbox-teal">
                 <div class="icon">
@@ -269,16 +299,13 @@
                 <p>New updates related to COVID-19 layer in Maps along with latest update on corona virus outbreak</p>
               </div>
             </div>
-  
           </div>
-  
         </div>
       </section>
       End Services Section
-  
     </main>
     End #main -->
-  
+
     <!-- ======= Footer ======= -->
     <footer id="footer">
       <div class="container">

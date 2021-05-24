@@ -506,26 +506,36 @@ h1, h2, h3, h4, h5, h6 {
 #hero-footer {
   width: 100%;
   font-size: 40px;
-  z-index: 999;
 }
 
-#hero-footer .row a, #hero-footer .row .icon .para h5, #hero-footer .row .icon .para p {
+#hero .modal {
+  font-size: 40px;
+  z-index: 9999;
+}
+
+#hero .modal .modal-content {
+  background-color: #111;
+}
+
+#hero-footer .row a, #hero-footer .row .icon .para h5, #hero-footer .row .icon .para p,
+#hero .modal-body .row a, #hero .modal-body .row .icon .para h5, #hero .modal-body .row .icon .para p 
+{
   color: #6f6f6f;
 }
 
-#hero-footer .row a:hover {
+#hero-footer .row a:hover, #hero .modal-body .row a:hover {
   color: #34b7a7;
 }
 
-#hero-footer .row .active a, #hero-footer .row .icon .active h5, #hero-footer .row .icon .active p {
+#hero-footer .row .active a, #hero-footer .row .icon .active h5, #hero-footer .row .icon .active p, 
+#hero .modal-body .row .active a, #hero .modal-body .row .icon .active h5, #hero .modal-body .row .icon .active p
+{
   color: #34b7a7;
 }
 
 #hero-footer .row .icon p {
   font-size: 20px;
 }
-
-
 
 @media (min-width: 1024px) {
   #hero-footer .row {
@@ -538,7 +548,6 @@ h1, h2, h3, h4, h5, h6 {
     padding-left: 60px;
   }
 
-
   #hero-footer .row .icon .para {
     padding-left: 10px;
     padding-top: 8px;
@@ -549,7 +558,21 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px;
   }
 
+  /* modal */
+  #hero .modal-body .row {
+    display: flex;
+    flex-flow: column wrap;
+   }
 
+  #hero .modal-body .row .icon .para {
+    padding-left: 10px;
+    padding-top: 8px;
+    text-align: start;
+  }
+
+  #hero .modal-body .row .icon .para h6 {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 992px) {
@@ -571,6 +594,18 @@ h1, h2, h3, h4, h5, h6 {
 
   #hero-footer .row .icon h5 {
     display: none;
+  }
+
+  /* modal */
+  #hero .modal-body .row{
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  #hero .modal-body .row .icon .para {
+    padding-left: 10px;
+    padding-top: 8px;
+    text-align: start;
   }
 
   #footer .container {
