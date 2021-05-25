@@ -29,7 +29,7 @@
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/style2.css" rel="stylesheet">
 
 </head>
 
@@ -67,19 +67,32 @@
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
-    <section id="hero" class="d-flex align-items-center hero-container">
-      <div class="container col-12 col-lg-4 d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
-        <h1>Post Covid Help</h1>
-        <h2>Fight together, win together</h2>
-        <!-- <a href="#services" class="btn-about scrollto">Need Help</a> -->
+    <section id="hero" class="d-flex align-items-center hero-container flex-column flex-md-row hero-cylinder">
+      <div class="container col-lg-4 d-flex flex-column align-items-center" data-aos="zoom-in" data-aos-delay="100">
+        <h1>Volunteer Registration</h1>
+        <h2>Interested in working with us? Fill up this form and we'll reach out as soon as possible!</h2>
       </div>
-      <div class="col-lg-4"></div>
+      <div class="col-lg-4 cylinder-form d-flex flex-column align-items-center">
+        <form class="volunteer" method="POST">
+          <h2>Volunteer Form</h2><br>
+          <table>
+          <tr><td><h2><label for>Name</label></h2></td> <td><input name = "name" class = "name" type="text"></input></td></tr>
+          <tr><td><h2><label for>Contact</label></h2></td> <td><input name = "phone" class = "phone" type="text"></input></td></tr>
+          <tr><td><h2><label for>Email</label><h2></td> <td><input name = "email" class = "email" type="text"></input></td></tr>
+          <tr><td><h2><label for>Pincode</label></h2></td> <td><input name = "pincode" class = "pincode" type="text"></input></td></tr>
+          <tr><td><h2><label for>City</label></h2></td> <td><input name = "city" class = "city" type="text"></input></td></tr>
+          <tr><td><h2><label for>Preferance</label></h2></td><td><select class="option"><option >Food Delivery</option><option>Oxygen Pickup</option></select></td></tr>
+          </table>
+          <input type="submit" value="Submit Request" class="btn-about scrollto" style="width:100%"></input>
+        </form>
+
+      </div>
       <footer class="col-lg-4" id="hero-footer">
         <div class="row text-center">
-          <div class="active mb-lg-1 col-lg-12 col-2 icon d-lg-flex">
+          <div class="mb-lg-1 col-lg-12 col-2 icon d-lg-flex">
             <div class="d-lg-flex d-lg-row">
               <a href="index.html"><i class="bx bx-home-smile"></i></a>
-              <div class="para active flex-column">
+              <div class="para flex-column">
                 <h5 class="m-auto">Home</h5>
                 <h6 class="m-auto"></h6>
                 <p class="d-lg-none">Home</p>
@@ -90,7 +103,7 @@
             <div class="d-lg-flex d-lg-row">
               <a href="cylinder.html"><i class="icofont-fire-extinguisher"></i></a>
               <div class="para flex-column">
-                <h5 class="m-auto">Cylinder</h5>
+                <h5 class="m-auto">O2 Cylinder-Pickup Request</h5>
                 <h6  class="m-auto"></h6>
                 <p class="d-lg-none">Cylinder </p>
               </div>
@@ -116,13 +129,13 @@
               </div>
             </div>
           </div>
-          <div class="col-2 mb-lg-1 col-lg-12 col-lg-12 icon d-lg-flex">
+          <div class="active col-2 mb-lg-1 col-lg-12 col-lg-12 icon d-lg-flex">
             <div class="d-lg-flex d-lg-row">
-              <a href="supplylinks.html"><i class="bx bx-first-aid"></i></a>
-              <div class="para flex-column">
-                <h5 class="m-auto">Supplies</h5>
-                <h6 class="m-auto">Link of raw Materials for Covid-19 Supplies by contributor</h6>
-                <p class="d-lg-none">Supplies</p>
+              <a href="volunteer.html"><i class="icofont-hand-power"></i></a>
+              <div class="para active flex-column">
+                <h5 class="m-auto">Volunteer</h5>
+                <h6 class="m-auto">Be Volunteer</h6>
+                <p class="d-lg-none">Volunteer</p>
               </div>
             </div>
           </div>
@@ -154,10 +167,10 @@
               <div class="row text-center">
                 <div class="col-12 mb-lg-1 icon d-flex">
                   <div class="d-flex d-row">
-                    <a href="volunteer.html"><i class="icofont-hand-power"></i></a>
+                    <a href="supplylinks.html"><i class="bx bx-first-aid"></i></a>
                     <div class="para flex-column">
-                      <h5 class="m-auto">Volunteer</h5>
-                      <h6 class="m-auto">Be Volunteer</h6>
+                      <h5 class="m-auto">Supplies</h5>
+                      <h6 class="m-auto">Link of raw Materials for Covid-19 Supplies by contributor</h6>
                     </div>
                   </div>
                 </div>
@@ -181,8 +194,8 @@
       </div>
     </footer><!-- End  Footer -->
 
-  <!-- <div id="preloader"></div>
-  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a> -->
+  <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase.js"></script>
+  <script src="assets/js/app2.js"></script>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
