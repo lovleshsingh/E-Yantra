@@ -18,16 +18,6 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", sans-serif;
 }
 
-/* #main {
-  margin-top: 50px;
-} */
-
-@media (max-width: 992px) {
-  /* #main {
-    margin-top: 30px;
-  } */
-}
-
 /*--------------------------------------------------------------
 # Preloader
 --------------------------------------------------------------*/
@@ -405,8 +395,7 @@ h1, h2, h3, h4, h5, h6 {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 100vh;
-  /* background: url("../img/bg_lg-01.png") top center; */
+  /* height: 100vh; */
   background-size: cover;
   background-color: #111;
 }
@@ -454,7 +443,6 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero:before {
   content: "";
-  /* background: rgba(255, 255, 255, 0.63); */
   position: absolute;
   bottom: 0;
   top: 0;
@@ -475,13 +463,13 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1024px) {
   #hero {
     background-attachment: fixed;
+    height: 100vh;
   }
 }
 
 @media (max-width: 992px) {
   #hero:before {
     content: "";
-    /* background: rgba(255, 255, 255, 0.63); */
     position: absolute;
     bottom: 0;
     top: 0;
@@ -498,7 +486,7 @@ h1, h2, h3, h4, h5, h6 {
 
   #hero {
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-size: cover;
     background-color: #111;
   
@@ -623,7 +611,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* awareness */
-
 .hero-fund .hero-awareness .details .container {
   position: relative;
   width: 320px;
