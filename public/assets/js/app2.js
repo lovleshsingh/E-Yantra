@@ -43,7 +43,7 @@ else{
 }
 
 if(phone.match(/^\d{10}$/)){
-console.log("The phone number is valid);
+console.log("The phone number is valid");
 }
 else{
   alert("The phone number you have entered is invalid");
@@ -51,7 +51,7 @@ else{
 }
   
   if(pincode.match(/^\d{6}$/)){
-console.log("The phone number is valid);
+console.log("The phone number is valid");
 }
 else{
   alert("The phone number you have entered is invalid");
