@@ -24,6 +24,36 @@ function submitForm(e) {
   let email = document.querySelector(".email").value;
   let phone = document.querySelector(".phone").value;
   let address = document.querySelector(".address").value;
+  
+  if(name.match(/^[A-Za-z]+$/)){
+  console.log("The name is valid");
+  }
+  else{
+    alert("Name is invalid please enter only alphabets");
+    return false;
+  }
+  
+  if(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email)){
+  console.log("valid email id entered\n");
+  }
+  else{
+    alert("The email id is invalid, please try again");
+    return false;
+  }
+  
+  if(phone.match(/^\d{10}$/)){
+  console.log("The phone number is valid);
+  }
+  else{
+    alert("The phone number you have entered is invalid");
+    return false;
+  }
+  if(address.match(/^[A-Za-z]+$/)){
+  console.log("The address is valid");}
+  else{
+    alert("The address is invalid");
+    return false;
+  }
   console.log(name, email, phone, address);
 
   saveContactInfo(name, email, phone, address);
